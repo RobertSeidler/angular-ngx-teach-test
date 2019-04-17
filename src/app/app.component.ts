@@ -42,10 +42,10 @@ export class AppComponent {
         },
         {
           key: 'a2',
-          type: 'multicheckbox',
+          type: 'radio',
           templateOptions: {
             label: '',
-            description: 'Es kann 0-4 richtige Antworten geben.',
+            description: 'Es ist genau eine Antwort richtig.',
             options: [
               { value: 1, label: 'Option 1' },
               { value: 2, label: 'Option 2' },
@@ -57,6 +57,10 @@ export class AppComponent {
       ]
     }
   ];
+
+  submit(model: any){
+    console.log(model);
+  }
 }
 
 
